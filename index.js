@@ -6,6 +6,13 @@ const clientSecret = '2f5bfafc24ad826a13aea7fc16a3815133705f4a'
 
 const app = express()
 
+// To handle CORS orgin
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 
 
 app.get('/oauth/redirect', (req, res) => {
