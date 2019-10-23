@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SoCar - Login</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <style type="text/css" media="screen">
+        body {
+            color: white;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 98%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        .ns-row-cont {
+            margin-top: 8%;
+        }
+
+        .ns-butt-cont {
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ns-row-cont">
+            <div class="col text-center">
+                <h1>Welcome to SOCAR - Node.js Demo</h1>
+            </div>
+
+            <div class="col text-center ns-butt-cont">
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" onClick="loginWithGithub()">
+                        Login to GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function loginWithGithub() {
+        window.open('https://github.com/login/oauth/authorize?client_id=c8f6ec7d2be463e761f7&redirect_uri=http://localhost:8080/oauth/redirect', '_self')
+    }
+
+</script>
+
+</html>
